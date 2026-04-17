@@ -1,2 +1,9 @@
 bin/
 obj/
+
+# Ignorar archivos temporales de SQLite
+*.db-shm
+*.db-wal
+
+# (Opcional) Si también quieres ignorar la base de datos local principal
+*.db
