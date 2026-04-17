@@ -89,12 +89,12 @@
         }
       }
     },
-    "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj": {
+    "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj",
-        "projectName": "Core.mediatOR",
-        "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj",
+        "projectUniqueName": "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj",
+        "projectName": "core.mediatOR",
+        "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj",
         "packagesPath": "C:\\Users\\abelg\\.nuget\\packages\\",
         "outputPath": "C:\\Starbucks\\core\\core.mediatOR\\obj\\",
         "projectStyle": "PackageReference",
@@ -305,8 +305,8 @@
               "C:\\Starbucks\\core\\core.Mappy\\core.Mappy.csproj": {
                 "projectPath": "C:\\Starbucks\\core\\core.Mappy\\core.Mappy.csproj"
               },
-              "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj": {
-                "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj"
+              "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj": {
+                "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj"
               },
               "C:\\Starbucks\\src\\Starbucks.Persistence\\Starbucks.Persistence.csproj": {
                 "projectPath": "C:\\Starbucks\\src\\Starbucks.Persistence\\Starbucks.Persistence.csproj"

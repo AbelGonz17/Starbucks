@@ -1180,7 +1180,7 @@
           "bin/placeholder/core.Mappy.dll": {}
         }
       },
-      "Core.mediatOR/1.0.0": {
+      "core.mediatOR/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
@@ -1188,10 +1188,10 @@
           "Scrutor": "6.0.1"
         },
         "compile": {
-          "bin/placeholder/Core.mediatOR.dll": {}
+          "bin/placeholder/core.mediatOR.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.mediatOR.dll": {}
+          "bin/placeholder/core.mediatOR.dll": {}
         }
       },
       "Starbucks.Domain/1.0.0": {
@@ -3339,10 +3339,10 @@
       "path": "../../core/core.Mappy/core.Mappy.csproj",
       "msbuildProject": "../../core/core.Mappy/core.Mappy.csproj"
     },
-    "Core.mediatOR/1.0.0": {
+    "core.mediatOR/1.0.0": {
       "type": "project",
-      "path": "../../core/core.mediatOR/Core.mediatOR.csproj",
-      "msbuildProject": "../../core/core.mediatOR/Core.mediatOR.csproj"
+      "path": "../../core/core.mediatOR/core.mediatOR.csproj",
+      "msbuildProject": "../../core/core.mediatOR/core.mediatOR.csproj"
     },
     "Starbucks.Domain/1.0.0": {
       "type": "project",
@@ -3357,9 +3357,9 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Core.mediatOR >= 1.0.0",
       "Starbucks.Persistence >= 1.0.0",
-      "core.Mappy >= 1.0.0"
+      "core.Mappy >= 1.0.0",
+      "core.mediatOR >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3397,8 +3397,8 @@
             "C:\\Starbucks\\core\\core.Mappy\\core.Mappy.csproj": {
               "projectPath": "C:\\Starbucks\\core\\core.Mappy\\core.Mappy.csproj"
             },
-            "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj": {
-              "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj"
+            "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj": {
+              "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj"
             },
             "C:\\Starbucks\\src\\Starbucks.Persistence\\Starbucks.Persistence.csproj": {
               "projectPath": "C:\\Starbucks\\src\\Starbucks.Persistence\\Starbucks.Persistence.csproj"

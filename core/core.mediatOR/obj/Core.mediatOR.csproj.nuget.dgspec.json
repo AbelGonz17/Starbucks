@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj": {}
+    "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj": {}
   },
   "projects": {
-    "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj": {
+    "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj",
-        "projectName": "Core.mediatOR",
-        "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\Core.mediatOR.csproj",
+        "projectUniqueName": "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj",
+        "projectName": "core.mediatOR",
+        "projectPath": "C:\\Starbucks\\core\\core.mediatOR\\core.mediatOR.csproj",
         "packagesPath": "C:\\Users\\abelg\\.nuget\\packages\\",
         "outputPath": "C:\\Starbucks\\core\\core.mediatOR\\obj\\",
         "projectStyle": "PackageReference",

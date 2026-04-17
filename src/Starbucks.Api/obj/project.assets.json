@@ -1212,7 +1212,7 @@
           "bin/placeholder/core.Mappy.dll": {}
         }
       },
-      "Core.mediatOR/1.0.0": {
+      "core.mediatOR/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
@@ -1220,19 +1220,19 @@
           "Scrutor": "6.0.1"
         },
         "compile": {
-          "bin/placeholder/Core.mediatOR.dll": {}
+          "bin/placeholder/core.mediatOR.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.mediatOR.dll": {}
+          "bin/placeholder/core.mediatOR.dll": {}
         }
       },
       "Starbucks.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Core.mediatOR": "1.0.0",
           "Starbucks.Persistence": "1.0.0",
-          "core.Mappy": "1.0.0"
+          "core.Mappy": "1.0.0",
+          "core.mediatOR": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Starbucks.Application.dll": {}
@@ -3417,10 +3417,10 @@
       "path": "../../core/core.Mappy/core.Mappy.csproj",
       "msbuildProject": "../../core/core.Mappy/core.Mappy.csproj"
     },
-    "Core.mediatOR/1.0.0": {
+    "core.mediatOR/1.0.0": {
       "type": "project",
-      "path": "../../core/core.mediatOR/Core.mediatOR.csproj",
-      "msbuildProject": "../../core/core.mediatOR/Core.mediatOR.csproj"
+      "path": "../../core/core.mediatOR/core.mediatOR.csproj",
+      "msbuildProject": "../../core/core.mediatOR/core.mediatOR.csproj"
     },
     "Starbucks.Application/1.0.0": {
       "type": "project",
