@@ -1,0 +1,12 @@
+C:\Starbucks\core\core.Mappy\bin\Debug\net9.0\core.Mappy.deps.json
+C:\Starbucks\core\core.Mappy\bin\Debug\net9.0\core.Mappy.dll
+C:\Starbucks\core\core.Mappy\bin\Debug\net9.0\core.Mappy.pdb
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.csproj.AssemblyReference.cache
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.AssemblyInfoInputs.cache
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.AssemblyInfo.cs
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.csproj.CoreCompileInputs.cache
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.dll
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\refint\core.Mappy.dll
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\core.Mappy.pdb
+C:\Starbucks\core\core.Mappy\obj\Debug\net9.0\ref\core.Mappy.dll

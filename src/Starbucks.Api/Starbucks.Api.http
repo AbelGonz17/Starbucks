@@ -1,0 +1,6 @@
+@Starbucks.Api_HostAddress = http://localhost:5012
+
+GET {{ Starbucks.Api_HostAddress }}/api/Category
+Accept: application/json
+
+###
