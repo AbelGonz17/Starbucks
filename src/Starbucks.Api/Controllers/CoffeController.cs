@@ -1,9 +1,7 @@
 using Core.mediatOR.Contracts;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Starbucks.Application.Coffes.Commands;
 using Starbucks.Application.Coffes.DTOs;
-using Starbucks.Domain;
 
 namespace Starbucks.Api.Controllers
 {

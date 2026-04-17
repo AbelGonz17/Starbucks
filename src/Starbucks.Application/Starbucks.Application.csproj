@@ -14,9 +14,8 @@
 
   <ItemGroup>
     <Folder Include="Categories\Queries\" />
-    <Folder Include="Coffes\" />
     <Folder Include="Coffes\Commands\" />
-    <Folder Include="Coffes\DTOs\" />
+    <Folder Include="Coffes\Queries\" />
   </ItemGroup>
 
 </Project>
