@@ -4,3 +4,19 @@ GET {{ Starbucks.Api_HostAddress }}/api/Category
 Accept: application/json
 
 ###
+
+
+POST {{ Starbucks.Api_HostAddress }}/api/Coffe
+Accept: application/json
+Content-Type: application/json
+
+{
+    "Name" : "Cafe colombiano",
+    "Description" : "Cafe de las costas del caribe",
+    "Price" : 50,
+    "CategoryId" : 1,
+    "Imagen" : ""
+}
+
+###
+
