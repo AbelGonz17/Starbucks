@@ -11,8 +11,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "Name" : "Cafe Santo Domingo",
-    "Description" : "El mejor caffe del caribe",
+    "Name" : "Cafe Argentino",
+    "Description" : "El mejor cafe de Argentina",
     "Price" : 200,
     "CategoryId" : 1,
     "Imagen" : ""

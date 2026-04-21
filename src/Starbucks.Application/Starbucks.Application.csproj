@@ -15,7 +15,10 @@
   <ItemGroup>
     <Folder Include="Categories\Queries\" />
     <Folder Include="Coffes\Commands\" />
-    <Folder Include="Coffes\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
   </ItemGroup>
 
 </Project>

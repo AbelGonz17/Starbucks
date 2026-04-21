@@ -1,5 +1,6 @@
 using Core.Mappy.Interfaces;
 using Core.mediatOR.Contracts;
+using FluentValidation;
 using Starbucks.Application.Coffes.DTOs;
 using Starbucks.Domain;
 using Starbucks.Persistence;
@@ -13,14 +14,44 @@ public class CoffeCreate
         public required CoffeCreateRequest CoffeCreateRequest { get; set; }
     }
 
-    public class Handler(StarcbucksDbContext context, IMapper mapper) : IRequestHandler<Command, Guid>
+    public class CommandValidator : AbstractValidator<Command>
+    {
+        public CommandValidator()
+        {
+            RuleFor(x => x.CoffeCreateRequest)
+            .SetValidator(new RequestValidator());
+        }
+
+        public class RequestValidator : AbstractValidator<CoffeCreateRequest>
+        {
+            public RequestValidator()
+            {
+                RuleFor(x => x.Name)
+                    .NotEmpty().WithMessage("The name is required");
+                RuleFor(x => x.Description)
+                    .NotEmpty().WithMessage("The description is required");
+                RuleFor(x => x.CategoryId)
+                    .NotEmpty().WithMessage("The category id is required");
+            }
+        }
+    }
+
+    public class Handler(
+        StarcbucksDbContext context, 
+        IMapper mapper,
+        IValidator<Command> validator
+        ) 
+        : IRequestHandler<Command, Guid>
     {
         private readonly StarcbucksDbContext _context = context;
         private readonly IMapper _mapper = mapper;
+        private readonly IValidator<Command> _validator = validator;
         public async Task<Guid> Handle(
             Command request,
             CancellationToken cancellationToken)
         {
+            await _validator.ValidateAndThrowAsync(request, cancellationToken);
+
             var coffe = _mapper.Map<Coffe>(request.CoffeCreateRequest);
             _context.Add(coffe);
             await _context.SaveChangesAsync(cancellationToken);
