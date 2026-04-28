@@ -1,4 +1,5 @@
 using Core.mediatOR.Contracts;
+using Core.MediatOR.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Core.mediatOR;
@@ -27,6 +28,24 @@ public class Mediator : IMediator
         if (handler is null)
             throw new InvalidOperationException($"no se ecuentro el handler para {request.GetType().Name}");
 
-        return await handler.Handle((dynamic)request, cancellationToken);
+        var behaviorType = typeof(IPipelineBehavior<,>)
+                .MakeGenericType(request.GetType(), typeof(TResponse));
+
+        var behaviors = _provider
+                            .GetServices(behaviorType)
+                            .Cast<dynamic>()
+                            .Reverse()
+                            .ToList();
+
+        RequestHandlerDelegate<TResponse> handlerDelegate =
+                 () => handler.Handle((dynamic)request, cancellationToken);
+            
+        foreach( var behavior in behaviors)
+        {
+            var next = handlerDelegate;
+            handlerDelegate = () => behavior.Handle((dynamic)request, cancellationToken, next);
+        }
+
+        return await handlerDelegate();
     }
 }

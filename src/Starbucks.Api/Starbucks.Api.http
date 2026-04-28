@@ -11,10 +11,10 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "Name" : "Cafe Argentino",
-    "Description" : "El mejor cafe de Argentina",
-    "Price" : 200,
-    "CategoryId" : 1,
+    "Name" : "Caffe butelo",
+    "Description" : "es muy bueno y querido por los viajerons",
+    "Price" : 700,
+    "CategoryId" : 2,
     "Imagen" : ""
 }
 

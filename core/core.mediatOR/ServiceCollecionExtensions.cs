@@ -1,5 +1,6 @@
 using System.Reflection;
 using Core.mediatOR.Contracts;
+using Core.MediatOR.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 using Scrutor;
 
@@ -16,6 +17,13 @@ public static class ServiceColleciontExtensions
         services.Scan(scan => scan
             .FromAssemblies(assemblies)
             .AddClasses(c => c.AssignableTo(typeof(IRequestHandler<,>)))
+            .AsImplementedInterfaces()
+            .WithTransientLifetime()
+        );
+
+        services.Scan(scan => scan
+            .FromAssemblies(assemblies)
+            .AddClasses(c => c.AssignableTo(typeof(IPipelineBehavior<,>)))
             .AsImplementedInterfaces()
             .WithTransientLifetime()
         );
