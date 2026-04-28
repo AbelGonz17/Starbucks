@@ -12,15 +12,15 @@ namespace Starbucks.Api.Controllers
         private readonly IMediator _mediator = mediator;
 
         [HttpPost]
-        public async Task<Guid> CreateCoffe(
+        public async Task<IActionResult> CreateCoffe(
             CoffeCreateRequest request, 
             CancellationToken cancellationToken)
         {
-            var result = await _mediator.Send(
+            var coffeId = await _mediator.Send(
                 new CoffeCreate.Command { CoffeCreateRequest = request },
                 cancellationToken);
 
-            return result;
+            return Created($"api/coffes/{coffeId}", coffeId);
         }
     }
 }

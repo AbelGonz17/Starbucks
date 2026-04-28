@@ -8,13 +8,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\core\core.Mappy\core.Mappy.csproj" />
-    <ProjectReference Include="..\..\core\core.mediatOR\Core.mediatOR.csproj" />
+    <ProjectReference Include="..\..\core\Core.MediatOR\Core.MediatOR.csproj" />
     <ProjectReference Include="..\Starbucks.Persistence\Starbucks.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Categories\Queries\" />
     <Folder Include="Coffes\Commands\" />
+    <Folder Include="Execptions\" />
   </ItemGroup>
 
   <ItemGroup>
